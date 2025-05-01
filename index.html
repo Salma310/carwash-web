@@ -1,7 +1,7 @@
-<?php
+<!-- <?php
 if(session_status() === PHP_SESSION_NONE)
     session_start();
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -56,19 +56,19 @@ if(session_status() === PHP_SESSION_NONE)
         <h1>Log In</h1>
         <p>Log in to continue in our website.</p>
 
-        <?php 
+        <!-- <?php 
         if(isset($_SESSION['pesan_gagal'])) {
             echo '<div class="pesan-box">' . $_SESSION['pesan_gagal'] . '</div>';
             unset($_SESSION['pesan_gagal']); 
-        }?>
-        <form action="cek_login.php" method="post">
-         <?php  
+        }?> -->
+        <form action="home.html" method="post">
+         <!-- <?php  
             if(isset($_SESSION['_flashdata'])){
                 foreach ($_SESSION['_flashdata'] as $key => $val) {
                 echo get_flashdata($key);
                 }
             }
-            ?>
+            ?> -->
             <div class="box">
                 <input type="text" name="username" placeholder="Username" required >  
                 <i class="far fa-envelope"></i>
