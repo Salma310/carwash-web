@@ -25,6 +25,13 @@ if(session_status() === PHP_SESSION_NONE)
         border: 1px solid #ebccd1;
         border-radius: 4px;
     }
+    .logo img {
+      margin-bottom: 8px;
+    }
+
+    .right h1 {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -48,14 +55,12 @@ if(session_status() === PHP_SESSION_NONE)
         </div>
       </div>
 
-      <div class=" right">
+      <div class="right">
         <div class="logo">
           <img src="image/logos.png" alt="">
         </div>
-
         <h1>Log In</h1>
         <p>Log in to continue in our website.</p>
-
         <!-- <?php 
         if(isset($_SESSION['pesan_gagal'])) {
             echo '<div class="pesan-box">' . $_SESSION['pesan_gagal'] . '</div>';
@@ -93,9 +98,9 @@ if(session_status() === PHP_SESSION_NONE)
             <img src="https://img.icons8.com/color/48/000000/github--v1.png" />
           </div>
         </div>
-        <div class="social">
+        <!-- <div class="social">
           <h3>Without Login : for portofolio only</h3><a href="home.html">Click Here</a>
-        </div>
+        </div> -->
       </div>
     </div>
 
